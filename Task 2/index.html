@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- changes are done in internal css  -->
+    <style>
+        .square{
+    height: 260px;
+    width: 260px;
+    border:1px solid;
+    margin-left:20px;
+    margin-top: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+  }
+.triangle{
+    height: 0px;
+    width: 0px;
+    border-style:solid;
+    position: absolute;
+}
+
+.left{
+    border-width:80px 80px 0px 0px;
+    top:0 ;
+    left: 0;
+    border-color: black transparent transparent transparent;
+}
+
+.right{
+    border-width:80px 0px 0px 80px;
+    top:0 ;
+    right: 0;
+    border-color: black transparent transparent transparent;
+}
+
+.down-left{
+    border-width:0px 80px 80px 0px;
+    bottom:0 ;
+    left: 0;
+    border-color:  transparent transparent black transparent;
+}
+.down-right{
+    border-width:0px 0px 80px 80px;
+    bottom:0 ;
+    right: 0;
+    border-color:  transparent transparent black transparent;
+}
+
+.rhombus {
+  height:182px;
+  width:182px;
+  border:1px solid;
+  transform: rotate(45deg);
+  }
+
+.circle {
+    height: 180px;
+    width: 180px;
+    border-radius: 60%;
+    /* padding: 5.5px; */
+    /* padding-left: 10px;
+    padding-right: 0px; */
+    /* padding-bottom: 15px; */
+    border:1px solid;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+  }
+
+
+  /* .child1{
+    padding: 0.5px;
+    height:55px;
+    width: 55px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border:1px solid; */
+    /* margin: 10px; */
+    /* border-left:1px solid rgb(9, 9, 9);
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 0; */
+
+    /* border-bottom: 1px solid rgb(1, 1, 1); */
+    /* margin-top: 5px; */
+    /* width: 90px;
+    height: 180px; */
+    /* width: 90px;
+  
+    border-top: 1px solid black;
+    line-height: 80%; */
+  /* } */
+.horizontal{
+    border-bottom: 1px solid rgb(1, 1, 1);
+    width: 190px;
+    height: 10px;
+}
+
+.vertical{
+    border-left:1px solid rgb(9, 9, 9);
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 0; 
+}
+
+
+
+  </style>
+
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+
+</head>
+<body>
+    <div class = 'square'>
+        <div class = 'triangle left'></div>
+        <div class = 'triangle right'></div>
+        <div class = 'triangle down-left'></div>
+        <div class = 'triangle down-right'></div>
+            <div class = 'rhombus'>
+                    <div class = 'circle'>
+                        <div class = 'horizontal'></div>
+                        <div class = 'vertical'></div>
+
+                        <!-- external css content -->
+                        <!-- <div class = 'child1'></div>
+                        <div class = 'child1'></div>
+                        <div class = 'child1'></div>
+                        <div class = 'child1'></div> -->
+
+                    </div>
+            </div>  
+    </div>
+</body>
+</html>
