@@ -1,0 +1,106 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#contactpage {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff; 
+    padding: 20px;
+    overflow-y: auto;
+}
+.navbar {
+    background-color: #7b1fa2;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 20px;
+    color: #fcfcfc;
+    font-size: 45px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.navbar ul li a {
+    color: #d1c4e9; 
+    text-decoration: none;
+    font-size: 25px;
+    padding: 8px 16px;
+}
+
+.navbar ul li a:hover {
+    background-color: #9c27b0; 
+    border-radius: 4px;
+}
+.content {
+    padding-top: 80px; 
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #7b1fa2;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.eventbox {
+    width: 22%;
+    background-color: #f3e5f5;
+    border: 2px solid #7b1fa2;
+    border-radius: 10px;
+    padding: 20px;
+    margin:10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eventbox h3 {
+    font-size: 22px;
+    color: #512da8;
+    margin-bottom: 10px;
+}
+
+.eventbox p {
+    font-size: 18px;
+    color: #6a1b9a;
+}
+
+.eventbox strong {
+    color: #6a1b9a;
+}

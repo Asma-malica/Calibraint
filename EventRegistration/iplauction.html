@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Auction Registration</title>
+    <link rel="stylesheet" href="iplauction.css">
+</head>
+<body>
+    <div id="iplauctionpage">
+        <div class="navbar">
+            <h1>InnovateX</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      
+
+
+    <div class="container">
+        <header>
+            <p class="title">IPL Auction</p>
+            <p class="subtitle">Registration and Schedule</p>
+        </header>
+        <main>
+            <div class="event-box">
+                <section class="registration">
+                    <h4>Register for IPL Auction</h4>
+                    <form onsubmit="submitform(event)" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+                <div class="info">
+                    <div class="event-description">
+                        <h4>Event Description</h4>
+                        <ul>
+                            <li>IPL Auction is a non tech event.</li>
+                            <li>A maximum of 3 members can participate.</li>
+                            <li>Participation is free.</li>
+                            <li>Certificates will be provided.</li>
+                            <!-- <li>Only technical topics are allowed.</li> -->
+                        </ul>
+                    </div>
+                    <div class="schedule">
+                        <h4>Event Schedule</h4>
+                        <p><strong>Date:</strong> September 30, 2024</p>
+                        <p><strong>Time:</strong> 01:00 PM - 2:00 PM</p>
+                        <p><strong>Venue:</strong>Ground</p>
+                        <p><strong>Student Coordinator:</strong>Bommi G</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script>
+    function submitform(event){
+        event.preventDefault(); 
+        const confirm = window.confirm("Are you sure you want to submit the form?");
+        if (confirm) {
+            window.alert("Thank you for your response. Your form has been submitted.");
+            // window.location.reload(); 
+            window.location.href = "home.html";
+        } else {
+            window.location.href = "home.html";
+        }
+    }
+</script>
+</body>
+</html>
