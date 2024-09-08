@@ -1,21 +1,22 @@
-let slideIndex = 0;
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function moveSlide(direction) {
-    const carousel = document.querySelector('.carousel');
-    const slides = document.querySelectorAll('.gallery-img');
-    const slideWidth = slides[0].clientWidth + 25;
-
-    slideIndex += direction;
-
-    if (slideIndex < 0) {
-        slideIndex = slides.length - 3;
-    } else if (slideIndex > slides.length - 3) {
-        slideIndex = 0;
-    }
-
-    carousel.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+function move(n) {
+  showDivs(slideIndex += n);
 }
 
-function showMore() {
-    alert('More details about this image.');
+function showDivs(n) {
+  var i;
+  var slides = document.getElementsByClassName("gallery-img");
+  var slidesToShow = 3;
+  if (n > slides.length - slidesToShow + 1) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length - slidesToShow + 1}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < slidesToShow; i++) {
+    if (slides[slideIndex + i - 1]) {
+      slides[slideIndex + i - 1].style.display = "block";
+    }
+  }
 }

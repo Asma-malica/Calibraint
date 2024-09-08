@@ -60,22 +60,23 @@ body {
     font-size: 50px;
     color: #ba68c8;
     text-align: center;
+    margin:0px
+
 }
 
-.carousel-container {
+.carouselcontainer {
+    margin-top: 10px;
     position: relative;
-    max-width: 950px;
+    max-width: 1050px;
     margin: 20px auto;
     overflow: hidden;
-    border: 2px solid #76179e; 
+    border: 3px solid #76179e;
     border-radius: 20px;
     background-color: #f3e5f5;
-    height: 330px;
-}
-
-.carousel {
+    height: 390px;
     display: flex;
-    transition: transform 0.4s ease-in-out;
+    justify-content: center; 
+    align-items: center;
 }
 
 .carousel-slide {
@@ -86,10 +87,16 @@ body {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin: 0 12.5px;
+    margin: 0 12.5px; 
     border: 3px solid #09010b;
     border-radius: 10px;
+    display: none; 
 }
+
+/* .gallery-img:first-child {
+    display: block;
+} */
+
 
 .prev, .next {
     position: absolute;
@@ -103,10 +110,12 @@ body {
 
 .prev {
     left: 0;
+    margin-left: 6px;
 }
 
 .next {
     right: 0;
+    margin-right: 6px;
 }
 
 .buttons-container {
@@ -119,7 +128,7 @@ body {
     color: white;
     padding: 10px 20px;
     font-size: 18px;
-    border: none;
+    /* border: none; */
     border-radius: 8px;
     cursor: pointer;
 }
