@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     height: 715px;
-
     font-family: Arial, sans-serif;
 }
 
@@ -65,18 +64,16 @@ body {
 
 .carousel-container {
     position: relative;
-    max-width: 1010px;
-    margin: 0 auto;
+    max-width: 950px;
+    margin: 20px auto;
     overflow: hidden;
     border: 2px solid #76179e; 
     border-radius: 20px;
     background-color: #f3e5f5;
-    height: 355px;
+    height: 330px;
 }
 
 .carousel {
-    margin-left: 11px;
-    margin-top: 22px;
     display: flex;
     transition: transform 0.4s ease-in-out;
 }
@@ -97,19 +94,14 @@ body {
 .prev, .next {
     position: absolute;
     top: 50%;
-    /* transform: translateY(-50%); */
     background-color: rgba(0,0,0,0.5);
     color: white;
-    /* border: none; */
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
 }
 
 .prev {
-    cursor: pointer;
-    /* border-radius: 50%; */
-    /* margin-right: 500px; */
     left: 0;
 }
 
@@ -117,12 +109,21 @@ body {
     right: 0;
 }
 
-.description {
+.buttons-container {
     text-align: center;
-    padding: 20px;
-    background-color: #f3e5f5;
-    color: #333;
-    font-size: 18px;
     margin-top: 20px;
+}
+
+.more-btn {
+    background-color: #7b1fa2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: #9c27b0;
 }

@@ -105,9 +105,10 @@ body {
     padding: 10px;
     border: 1px solid #7b1fa2;
     border-radius: 10px;
-    margin-right: 50px;
+    margin-right: 40px;
     text-align: center;
     background-color: #f3e5f5;
+    margin-left: 80px;
 
     /* box-shadow: 0 0 15px #7b1fa2; */
 }
