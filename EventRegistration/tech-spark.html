@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSpark 2k23</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>InnovateX</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="outline">
+        <h1 class="h1">Tech Spark 2k23</h1>
+        <p class="p">Tech and Non-Tech Events</p>
+    </div>
+
+    <div class="carouselcontainer">
+        <button class="prev" onclick="move(-1)">&#10094;</button>
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="images/tech-spark-students.JPG" alt="tech-spark-students" class="gallery-img">
+                <img src="images/tech-spark-non-tech.jpg" alt="tech-spark-non-tech" class="gallery-img">
+                <img src="images/tech-spark-dance.jpg" alt="tech-spark-dance" class="gallery-img">
+                <img src="images/tech-spark-students.JPG" alt="tech-spark-students" class="gallery-img">
+                <img src="images/tech-spark-non-tech.jpg" alt="tech-spark-non-tech" class="gallery-img">
+                <img src="images/tech-spark-dance.jpg" alt="tech-spark-dance" class="gallery-img">
+            </div>
+        </div>
+        <button class="next" onclick="move(+1)">&#10095;</button>
+    </div>
+
+    <script src="carousel.js"></script>
+</body>
+</html>

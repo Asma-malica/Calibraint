@@ -19,10 +19,7 @@ function showDivs(n) {
     }
   }
 }
-
-
-
-    function searchEvent() {
+function searchEvent() {
         const searchInput = document.getElementById('search-input').value.toLowerCase();
         // if (searchInput === 'innovatex') {
         //     window.location.href = 'innovatex.html';  
@@ -37,16 +34,16 @@ function showDivs(n) {
               window.location.href = 'cognizance.html';
               break;
           case 'techfest':
-              window.location.href = 'techfest.html';
+              window.location.href = 'tech-fest.html';
               break;
           case 'elitez':
               window.location.href = 'elitez.html';
               break;
           case 'techspark':
-              window.location.href = 'techspark.html';
+              window.location.href = 'tech-spark.html';
               break;
           case 'codefest':
-              window.location.href = 'codefest.html';
+              window.location.href = 'code-fest.html';
               break;
           default:
               alert('Event not found!');

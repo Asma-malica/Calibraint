@@ -1,2 +1,0 @@
-# Calibraint
-Training period Tasks
