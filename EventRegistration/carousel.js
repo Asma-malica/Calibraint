@@ -4,7 +4,6 @@ showDivs(slideIndex);
 function move(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var slides = document.getElementsByClassName("gallery-img");
@@ -20,3 +19,39 @@ function showDivs(n) {
     }
   }
 }
+
+
+
+    function searchEvent() {
+        const searchInput = document.getElementById('search-input').value.toLowerCase();
+        // if (searchInput === 'innovatex') {
+        //     window.location.href = 'innovatex.html';  
+        // } else {
+        //     alert('Event not found!');
+        // }
+        switch (searchInput) {
+          case 'innovatex':
+              window.location.href = 'innovatex.html';
+              break;
+          case 'cognizance':
+              window.location.href = 'cognizance.html';
+              break;
+          case 'techfest':
+              window.location.href = 'techfest.html';
+              break;
+          case 'elitez':
+              window.location.href = 'elitez.html';
+              break;
+          case 'techspark':
+              window.location.href = 'techspark.html';
+              break;
+          case 'codefest':
+              window.location.href = 'codefest.html';
+              break;
+          default:
+              alert('Event not found!');
+              break;
+      }
+      
+    }
+

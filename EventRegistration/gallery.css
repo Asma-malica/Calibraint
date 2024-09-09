@@ -64,6 +64,33 @@ body {
 
 }
 
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #9c27b0;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7b1fa2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #9c27b0;
+}
+
 .carouselcontainer {
     margin-top: 10px;
     position: relative;
@@ -121,18 +148,4 @@ body {
 .buttons-container {
     text-align: center;
     margin-top: 20px;
-}
-
-.more-btn {
-    background-color: #7b1fa2;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    /* border: none; */
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.more-btn:hover {
-    background-color: #9c27b0;
 }
