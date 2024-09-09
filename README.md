@@ -1,4 +1,4 @@
-#Calibraint
+# Calibraint
 
 - Training Period Tasks
-- Weekly Assessment
+- Weekly Assessment ( Event Registration System )
