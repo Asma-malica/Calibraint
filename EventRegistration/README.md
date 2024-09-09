@@ -10,7 +10,4 @@ Features Breakdown
 - Gallery Page : Showcases images from previous events.Users can search for past events and view related photos.
 - Contact Page : Provides contact details, including the phone numbers of student coordinators for each event.
 
-
-
-
-
+Website Link - https://66deefc95363bf865a267357--astonishing-cannoli-f6c796.netlify.app/
