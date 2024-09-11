@@ -4,5 +4,172 @@ https://github.com/kiruthikraaj/innovators-2k24/pull/19
 Weekly Assessment - 05.09.2024
 https://github.com/kiruthikraaj/innovators-2k24/pull/24
 
-Weekly Assessment - 09.09.2024
-https://github.com/kiruthikraaj/innovators-2k24/pull/33
+
+The “cascading” in CSS refers to the fact that styling rules “cascade” down from several sources. This means that CSS has an inherent hierarchy and styles of a higher precedence will overwrite rules of a lower precedence.
+
+
+
+
+translateZ() - Reposition the element along the z-axis in 3D space.  
+var() - Insert a value for custom property.  
+url() - It is used to include a file.  
+translateY() - Reposition the element along the vertical axis.  
+translateX() - Reposition the element along the horizontal axis.  
+translate3d() - Reposition an element in 3D space.  
+translate() - Reposition an element in a horizontal and vertical direction.  
+skewY() - Transform an element in the vertical direction in a 2D plane.  
+skewX() - Transform an element in the horizontal direction in a 2D plane.  
+skew() - It is used to transform an element in the 2D plane.  
+sepia() - Apply a filter to the image to convert an image into a sepia image.  
+scaleZ() - Resize an element along the z-axis.  
+scaleY() - Resize an element along the y-axis in a 2D plane.  
+scaleX() - Resize an element along the x-axis in a 2D plane.  
+scale3d() - Resize the element in a 3D space. It scales the elements in x, y, and z planes.  
+scale() - It is used to resize the element in a 2D plane.  
+saturate() - It is used to super-saturate or desaturate the input image.  
+rotateZ() - Rotate an element around the z-axis.  
+rotateY() - Rotate an element around the vertical axis.  
+rotateX() - Rotate an element around the x-axis.  
+rotate3d() - Set the style in web pages that contain HTML elements.  
+rotate() - Rotate an element based on the given angle as an argument.  
+rgba() - It is used to define the colors using the Red-Green-Blue-Alpha (RGBA) model.  
+rgb() - It is used to define the colors using the Red Green Blue (RGB) model.  
+repeating-radial-gradient() - It is used to repeat radial gradients.  
+repeating-linear-gradient() - It is used to repeat linear gradients.  
+repeating-conic-gradient() - Repeat conic gradients in the background image.  
+radial-gradient() - Set a radial gradient as the background image.  
+polygon() - It is used with the filter property to create a polygon of images or text.  
+perspective() - It is used with the transform property to set the perspective effect on images.  
+opacity() - Apply a filter to the image to set the transparency of the image.  
+min() - Return the minimum value from a set of comma-separated values.  
+max() - Return the largest value from a set of comma-separated values.  
+matrix3d() - Create a 3D transformation as a 4×4 homogeneous matrix.  
+matrix() - Create a homogeneous 2D transformation matrix.  
+linear-gradient() - Set the linear gradient as the background image.  
+invert() - Set the invert of the color of the sample image.  
+inset() - It is used with the filter property to change the inset of images.  
+hue-rotate() - Apply a filter to the image to set the hue rotation of the image.  
+hsla() - Define the colors using the Hue Saturation Lightness Alpha (HSLA) model.  
+hsl() - Define the colors using the Hue-saturation-lightness model (HSL).  
+grayscale() - Apply a filter to the image to set the grayscale of the image.  
+env() - Insert the value of a user agent-defined environment variable into your CSS.  
+ellipse() - Create floating text around the ellipse shape picture or anything else.  
+drop-shadow() - Apply a filter to the image to set the shadow of the image.  
+cubic-bezier() - Define a Cubic Bezier curve.  
+contrast() - Apply a filter to set the contrast of the image.  
+conic-gradient() - Set a conic gradient as the background image.  
+circle() - Create floating text around the circular shape picture or anything else.  
+calc() - Returns the value of an attribute of the selected elements.  
+brightness() - Apply a filter to set the brightness of the image.  
+blur() - Apply a blurred effect filter on the image.  
+attr() - Returns the value of an attribute of the selected elements.  
+
+
+
+
+
+Using Bootstrap CDN over manual installation is a little bit advantageous; it keeps your code short and clean, quick response of your site on access, short loading time and reduced bounce overs. Any how, there is a little problem- downtime or slow server connection may result in some missing features. However, if you use CDN, two things you need to take care of:
+Position your Bootstrap CDN in proper place. Place it into the header of your site , just above the custom css stylesheet that you created to add custom classes to your site. This is done to override any default bootstrap classes that you wish to modify, later on to your project.
+Now when it comes about the js files, you should place it in the footer section, just above the closing body tag. Additional steps should be taken care of; Bootstrap4 requires an additional popper.js and the usual jquery to run all the features. Maintain the order properly in your footer. The order should be-
+on top- jquery.min.js
+second- popper.js
+third and last position- bootstrap.min.js
+This is how, you should be able to add Bootstrap4 CDN into your project.
+
+
+
+
+
+
+
+
+
+
+
+
+A CDN, or Content Delivery Network, is a network of servers that delivers web content to users based on their location. CDNs are made up of servers that are strategically placed around the world in data centers. When a user visits a website, the content is stored on a CDN server that's closer to the user, which speeds up the loading time. 
+ 
+Here are some benefits of using a CDN: 
+ 
+Faster load times
+CDNs can help reduce load times and improve performance, which can boost user satisfaction. 
+ 
+Better SEO rankings
+CDNs can help improve SEO rankings by reducing bandwidth and improving load times. 
+ 
+Reduced buffering
+CDNs can help reduce buffering and improve the quality of images and sound. 
+ 
+Reduced latency
+CDNs can help reduce latency by using servers that are closer to the user. 
+ 
+Load balancing
+CDNs can help load balance traffic to prevent servers and routers from becoming overwhelmed. 
+ 
+CDNs are used by many industries, including media and entertainment, and online gaming. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+Here are some key points about Bootstrap:
+It has a system with 12 columns that changes size based on how big the screen is, making it great for viewing on phones, tablets, and computers.
+It comes with lots of ready-to-use pieces like menus, buttons, and alerts. You can change how these look with some coding skills.
+Bootstrap is made to be mobile-friendly from the start and works well in different web browsers. This means websites built with Bootstrap look good on any device.
+You can easily change the look of your site with Bootstrap's theme system, like adjusting colors and more.
+There's a lot of help and examples online to get you started quickly.
+Big names like NASA and Spotify use Bootstrap for their websites.
+
+
+
+
+
+
+
+
+Tailwind CSS is a tool for building websites that was created by Adam Wathan and Steve Schoger in 2017. It's different because it gives you a lot of small tools called utility classes that let you design web pages in detail. Think of it like having a big box of LEGO bricks where each brick can be used in many ways to make exactly what you want. Here are some important things to know about Tailwind CSS:
+Utility-First Approach: Tailwind CSS is all about giving you these utility classes for things like colors, spacing, and how text looks. This means you can mix and match them to make your web page look just right.
+Highly Customizable: You can change how Tailwind CSS works to fit your needs. This includes changing the color scheme, the fonts, and more right in the settings.
+Purges Unused CSS: Tailwind CSS helps keep your website fast by getting rid of styles you're not using. This means your website loads quicker because it's not weighed down by unnecessary stuff.
+Works with Other Tools: Whether you're using React, Vue, or another web development tool, Tailwind CSS fits right in. It's easy to add to whatever project you're working on.
+Mobile-First Styling: Tailwind CSS is made to make sure your website looks good on phones first, then adjusts for bigger screens like tablets and computers.
+In short, Tailwind CSS is all about letting you build your website your way, with lots of options for customization. It's great for making sure your site is fast and looks good on all devices, thanks to its focus on utility classes and mobile-first design.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

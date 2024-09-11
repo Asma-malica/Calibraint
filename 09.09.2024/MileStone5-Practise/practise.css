@@ -1,0 +1,159 @@
+/* Define custom properties */
+:root {
+    --main-color: lavender;
+    --box-size: 150px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* General styling for the boxes */
+.box {
+    width: var(--box-size);
+    height: var(--box-size);
+    margin: 20px;
+    background-color: #8a2be2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Transformation Properties */
+#translate {
+    transform: translate(50px, 30px); /* X-axis, Y-axis */
+}
+
+#translate3d {
+    transform: translate3d(40px, 30px, 20px); /* X, Y, Z */
+}
+
+#translateZ {
+    transform: translateZ(50px); /* Z-axis movement */
+    perspective: 500px; /* Enables 3D effects */
+}
+
+#skew {
+    transform: skew(20deg, 10deg); /* Skew along both X and Y axes */
+}
+
+#skewX {
+    transform: skewX(25deg); /* Skew only along the X-axis */
+}
+
+#skewY {
+    transform: skewY(15deg); /* Skew only along the Y-axis */
+}
+
+/* Custom property usage */
+.custom {
+    background-color: var(--main-color); /* Using CSS variable */
+}
+
+/* Background image fix with correct URL */
+#url-bg {
+    background-image: url("https://wallpapercave.com/wp/wp3203386.jpg"); /* Corrected image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Filter effects */
+#sepia {
+    filter: sepia(100%); /* Full sepia filter */
+}
+
+#saturate {
+    filter: saturate(200%); /* Double the saturation */
+}
+
+/* Scale transformations */
+#scale {
+    transform: scale(1.5, 1.2); /* Scale along X (1.5x) and Y (1.2x) */
+}
+
+#scale3d {
+    transform: scale3d(1.2, 1.3, 1.5); /* Scale along X, Y, and Z axes */
+}
+
+/* Rotate transformations */
+#rotate {
+    transform: rotate(45deg); /* Rotate element by 45 degrees */
+}
+
+#rotateX {
+    transform: rotateX(45deg); /* Rotate along the X-axis */
+    perspective: 400px;
+}
+
+#rotateY {
+    transform: rotateY(45deg); /* Rotate along the Y-axis */
+    perspective: 400px;
+}
+
+#rotateZ {
+    transform: rotateZ(45deg); /* Rotate along the Z-axis */
+}
+
+/* RGBA and RGB Colors */
+#rgba-color {
+    background-color: rgba(255, 0, 0, 0.5); /* Red with 50% opacity */
+}
+
+#rgb-color {
+    background-color: rgb(0, 128, 0); /* Pure Green */
+}
+
+/* Linear and Radial Gradients */
+#linear-gradient {
+    background: linear-gradient(45deg, red, yellow, blue);
+}
+
+#radial-gradient {
+    background: radial-gradient(circle, red, yellow, blue);
+}
+
+/* Repeating Gradients */
+#repeating-linear {
+    background: repeating-linear-gradient(45deg, red, yellow, blue, red 50px);
+}
+
+#repeating-radial {
+    background: repeating-radial-gradient(circle, red, yellow, blue 30px);
+}
+
+/* Perspective Transform */
+#perspective {
+    perspective: 600px;
+    transform: rotateX(20deg) rotateY(30deg);
+}
+
+/* Opacity and Invert Filters */
+#opacity-filter {
+    filter: opacity(50%);
+}
+
+#invert-filter {
+    filter: invert(100%);
+}
+
+/* Hover effects to reset the transformations */
+.box:hover {
+    transform: none;
+    filter: none;
+}

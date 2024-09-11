@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformations Demo</title>
+    <link rel="stylesheet" href="practise.css">
+</head>
+<body>
+    <h1>CSS Transformations</h1>
+
+    <div class="box" id="translate">Translate (X, Y)</div> <hr>
+    <div class="box" id="translate3d">Translate3D (X, Y, Z)</div><hr>
+    <div class="box" id="translateZ">TranslateZ (Z-axis)</div><hr>
+    <div class="box" id="skew">Skew (X, Y)</div><hr>
+    <div class="box" id="skewX">SkewX (X-axis)</div><hr>
+    <div class="box" id="skewY">SkewY (Y-axis)</div><hr>
+
+    <div class="box custom" id="var-css">Custom Property (var)</div><hr>
+    <div class="box" id="url-bg">Background Image (url)</div> <hr>
+
+    <div class="box" id="sepia">Sepia Filter</div><hr>
+    <div class="box" id="saturate">Saturate Filter</div><hr>
+    <div class="box" id="scale">Scale (X, Y)</div><hr>
+    <div class="box" id="scale3d">Scale3D (X, Y, Z)</div><hr>
+    <div class="box" id="rotate">Rotate (Angle)</div><hr>
+    <div class="box" id="rotateX">RotateX</div><hr>
+    <div class="box" id="rotateY">RotateY</div><hr>
+    <div class="box" id="rotateZ">RotateZ</div><hr>
+
+    <div class="box" id="rgba-color">RGBA Color</div><hr>
+    <div class="box" id="rgb-color">RGB Color</div><hr>
+    <div class="box" id="linear-gradient">Linear Gradient</div><hr>
+    <div class="box" id="radial-gradient">Radial Gradient</div><hr>
+    <div class="box" id="repeating-linear">Repeating Linear Gradient</div><hr>
+    <div class="box" id="repeating-radial">Repeating Radial Gradient</div><hr>
+    <div class="box" id="perspective">Perspective Transform</div><hr>
+    <div class="box" id="opacity-filter">Opacity Filter</div><hr>
+    <div class="box" id="invert-filter">Invert Filter</div><hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div>
+    <details>
+        <p>A woodchuck would chuck as much wood as a woodchuck could chuck</p>
+        <!-- <summary>How much wood could a woodchuck chuck?</summary>
+        <summary>How much wood could a woodchuck chuck?</summary>
+        <summary>How much wood could a woodchuck chuck?</summary>
+        <summary>How much wood could a woodchuck chuck?</summary> -->
+    </details>
+    </div><hr>
+
+    <!-- doubt   -->
+    <div>
+    <dialog close>
+        I'm closed.
+      </dialog>
+      
+      <dialog open>
+        I'm open.
+      </dialog><hr>
+    </div>
+    <script>
+    var dialog = document.querySelector('dialog');
+dialogPolyfill.registerDialog(dialog);</script>
+
+<input type="submit" value="Button Text"> <hr>
+<button type="submit">Button Text</button> <hr>
+<input type="text" required>
+<input type="text" disabled><hr>
+
+
+
+<button onclick="window.dialog.show();">open dialog</button>
+
+<dialog id="dialog">
+  I'm a dialog.
+  <button onclick="window.dialog.close();">close</button><hr>
+</dialog>
+
+<hr>
+<details>
+  <p>Asma</p>
+</details>
+<hr>
+<details>
+  <summary>Open it </summary>
+  <p>ASma</p>
+</details>
+
+<details open>
+  <summary>Open it </summary>
+  <p>ASma</p>
+</details>
+<hr>
+
+<p style="text-transform: none;">Asma malica</p><hr>
+<p style="text-transform: capitalize;">Asma malica</p><hr>
+<p style="text-transform: uppercase;">Asma malica</p><hr>
+<p style="text-transform: lowercase;">ASma malica</p><hr>
+
+<hr>
+<a href=""></a>
+
+</body>
+</html>
