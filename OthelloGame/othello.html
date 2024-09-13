@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Othello Game</title>
+    <link rel="stylesheet" href="othello.css" />
+  </head>
+  <body>
+    <h1>Othello Game</h1>
+    <h3 id="current-player-display"></h3>
+    <div id="scoreboard">
+      <p id="player1-score">Player 1 (Black): 0</p>
+      <p id="player2-score">Player 2 (White): 0</p>
+    </div>
+    <div id="game-board" class="game-board"></div>
+    <button id="restart-btn">Restart Game</button>
+    <div id="winner-popup" class="popup" style="display: none">
+      <h2 id="winner-message"></h2>
+      <button id="play-again-btn">Play Again</button>
+      <button id="exit-btn">Exit</button>
+    </div>
+    <div id="confetti" class="confetti-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
