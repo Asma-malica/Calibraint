@@ -1,13 +1,32 @@
-# Event Registration Website
+# Othello Game 
+ - A web-based Othello (Reversi) game where two players compete against each other.The game features an 8x8 board, where players flip the opponent's discs to gain the majority of the board.
 
-Event registration website allows users to explore event details, view schedules, register for events, browse event galleries, and contact coordinators. It consists of multiple pages, each serving a specific function, such as event registration, viewing past event photos
+#Features
+ - Simple and intuitive user interface.
+ - Dynamic score updates for each player.
+ - Confetti celebration for the winner.
+ - Restart and play again options after the game ends.
+ - Displays valid moves for the current player.
 
-Features Breakdown
+#Technologies Used
+ - HTML for structure and layout.
+ - CSS for styling and game board design.
+ - JavaScript for game logic, interactions, and animations.
 
-- Home Page : Displays the event title, date, location, and association name.It also contains the speaker section with his photo.
-- Event Page : Information about both technical and non-technical events.Details about the student and faculty coordinators of the event.Users can click on individual events to navigate to the respective event.html page for registration.
-- Registration Page : Users can fill out their basic information including name , email , Phone number . After submitting the form, the user is prompted with a confirmation (e.g., "Are you sure you want to register?"). If confirmed, the registration process proceeds which is done using JavaScript.
-- Gallery Page : Showcases images from previous events.Users can search for past events and view related photos.
-- Contact Page : Provides contact details, including the phone numbers of student coordinators for each event.
+#How to Play 
+- Open index.html in your browser.
+- Enter the names of the two players.
+- The game starts with Player 1 controlling the black pieces and Player 2 controlling the white pieces.
+- Click on valid moves to place your disc and flip your opponent's discs.
+- The game ends when neither player can make a valid move. The player with the most discs wins.
 
-Website Link - https://66deefc95363bf865a267357--astonishing-cannoli-f6c796.netlify.app/
+#Files Structure
+ - index.html: The main entry point where players input their names.
+ - othello.html: The game board and logic.
+ - othello.css: Styles for the game, including the board and player interface.
+ - script.js: Game logic, move validation, disc flipping, and end-game handling.
+ - images/othello.png: Image for the game logo.
+
+#Setup 
+ - Clone or download the repository.
+ - Open index.html in any web browser to start the game.
