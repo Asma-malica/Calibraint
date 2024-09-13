@@ -4,6 +4,10 @@ https://github.com/kiruthikraaj/innovators-2k24/pull/19
 Weekly Assessment - 05.09.2024
 https://github.com/kiruthikraaj/innovators-2k24/pull/24
 
+Othello Game - 13.09.2024
+https://github.com/kiruthikraaj/innovators-2k24/pull/48
+
+
 
 The “cascading” in CSS refers to the fact that styling rules “cascade” down from several sources. This means that CSS has an inherent hierarchy and styles of a higher precedence will overwrite rules of a lower precedence.
 
