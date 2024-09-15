@@ -32,5 +32,6 @@
  - Open index.html in any web browser to start the game.
  
 ## Screenshots
+ - ![Main-page](samplescreenshots/main-page.png)
  - ![Game](samplescreenshots/game.png)
  - ![Winner](samplescreenshots/winner.png)
