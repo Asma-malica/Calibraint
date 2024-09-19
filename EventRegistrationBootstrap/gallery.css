@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 715px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #7b1fa2;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 20px;
+    color: #fcfcfc;
+    font-size: 45px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    padding: 0 20px;
+}
+
+.navbar ul li a {
+    color: #d1c4e9;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 8px 16px;
+}
+
+.navbar ul li a:hover {
+    background-color: #9c27b0;
+    border-radius: 4px;
+}
+
+.h1 {
+    font-family: 'Algerian';
+    letter-spacing: 2px;
+    color: blueviolet;
+    text-align: center;
+}
+
+.p {
+    font-style: italic;
+    font-family: 'Brush Script MT';
+    font-size: 50px;
+    color: #ba68c8;
+    text-align: center;
+    margin:0px
+
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #9c27b0;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7b1fa2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #9c27b0;
+}
+
+.carouselcontainer {
+    margin-top: 10px;
+    position: relative;
+    max-width: 1050px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 3px solid #76179e;
+    border-radius: 20px;
+    background-color: #f3e5f5;
+    height: 390px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.gallery-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 12.5px; 
+    border: 3px solid #09010b;
+    border-radius: 10px;
+    display: none; 
+}
+
+/* .gallery-img:first-child {
+    display: block;
+} */
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.prev {
+    left: 0;
+    margin-left: 6px;
+}
+
+.next {
+    right: 0;
+    margin-right: 6px;
+}
+
+.buttons-container {
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,1 +1,54 @@
 https://html.spec.whatwg.org/multipage/#toc-introduction
+
+
+https://goalkicker.com/
+
+
+html / css guide 
+
+
+https://tutorial.techaltum.com/htmlTags.html#google_vignette
+
+1.
+<ul>
+	<li>Boil water in a large pot</li>
+<li>Add salt to water</li>
+<li>Add pasta</li>
+<li>Boil pasta for 7 to 8 minutes</li>
+	<li>Drain pasta</li></ul>
+
+
+
+2.
+
+<ul>
+  <li>Cupcakes</li>
+  <li>Brownies</li>
+  <li>Ice Cream
+    <ul>
+      <li>Rocky Road</li>
+      <li>Butter Pecan</li>
+      <li>Neapolitan</li>
+    </ul>
+  </li>
+  <li>Cheesecake</li>
+  <li>Pie
+    <ul>
+      <li>Apple</li>
+      <li>Chess</li>
+      <li>Key Lime</li>
+    </ul>
+  </li>
+</ul>
+
+
+3. 
+ul{
+	list-style-type:square;}
+
+4.
+
+ol{
+	list-style-type:upper-roman;}
+
+5.
