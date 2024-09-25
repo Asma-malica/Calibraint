@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turban Tadka Food Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #fff1e0;
+        color: #4b6043;
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        background-color: #d64045;
+      }
+      .navbar-brand {
+        color: #fff1e0 !important;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .navbar-nav .nav-link {
+        color: #fff1e0 !important;
+      }
+      .blog-title {
+        font-family: "Algerian", sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #d64045;
+      }
+      .post-card {
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .post-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .about-author img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .comment-section {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+      }
+      .comment-section h3 {
+        color: #d64045;
+      }
+      .search-bar {
+        margin: 20px 0;
+      }
+      .social-icons a {
+        margin-right: 15px;
+        color: #d64045;
+        font-size: 1.5rem;
+      }
+      .categories a {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 12px;
+        background-color: #d64045;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .categories a:hover {
+        background-color: #ff6f3c;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Turban Tadka</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog Title -->
+    <div class="container my-5">
+      <h1 class="blog-title">Turban Tadka Food Blog</h1>
+
+      <!-- Search Bar -->
+      <div class="row search-bar">
+        <div class="col-md-8 offset-md-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search for delicious recipes..."
+          />
+        </div>
+      </div>
+
+      <!-- Recent Blog Posts -->
+      <h2 class="text-center mb-4">Recent Posts</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="post-card">
+            <img src="images/post1.jpg" alt="Post 1" />
+            <div class="p-3">
+              <h5>Delicious Gulab Jamun Recipe</h5>
+              <p>A mouth-watering recipe for the perfect Gulab Jamun...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="post-card">
+            <img src="images/post2.jpg" alt="Post 2" />
+            <div class="p-3">
+              <h5>Refreshing Summer Drinks</h5>
+              <p>Learn how to make refreshing summer drinks with fruits...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="post-card">
+            <img src="images/post3.jpg" alt="Post 3" />
+            <div class="p-3">
+              <h5>Flavors of India: Street Food</h5>
+              <p>Discover the flavors of Indian street food with this guide...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Categories -->
+      <div class="categories my-5 text-center">
+        <h4>Categories</h4>
+        <a href="#">Indian Cuisine</a>
+        <a href="#">Drinks</a>
+        <a href="#">Desserts</a>
+        <a href="#">Snacks</a>
+        <a href="#">Healthy Recipes</a>
+      </div>
+
+      <!-- About the Author Section -->
+      <div class="about-author text-center my-5">
+        <img src="images/author.jpg" alt="Author" />
+        <h3>About the Author</h3>
+        <p>
+          Hi, I'm Jane Doe, a food enthusiast with a passion for creating
+          delicious, home-cooked meals that bring people together.
+        </p>
+      </div>
+
+      <!-- Individual Blog Post Template -->
+      <h2 class="text-center">Blog Post Title</h2>
+      <p class="text-center text-muted">By Author Name | Date</p>
+      <div class="post-content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+          justo non metus auctor luctus in vel tortor. Maecenas nec malesuada
+          risus. Vivamus gravida, lorem nec efficitur facilisis, tortor odio
+          cursus justo, eget ullamcorper lorem libero non eros...
+        </p>
+        <!-- Add more content for the post -->
+      </div>
+
+      <!-- Comment Section -->
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <div class="mb-3">
+          <label for="comment" class="form-label">Leave a Comment</label>
+          <textarea class="form-control" id="comment" rows="4"></textarea>
+        </div>
+        <button class="btn btn-primary">Post Comment</button>
+
+        <!-- Display existing comments -->
+        <div class="comments mt-4">
+          <div class="comment">
+            <strong>User 1:</strong>
+            <p>Great recipe! Can't wait to try it at home.</p>
+          </div>
+          <div class="comment">
+            <strong>User 2:</strong>
+            <p>Looks delicious! Thanks for sharing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="social-icons text-center my-4">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.js"
+      integrity="sha512-YTvfOp+Xc3/d/ZBwgEFmcrMj1PXnd+TlCkofe3URbj8v0cHCW1Kt7sMQKPQ2RqCUU8sxLZPa8lFAnScwS2zKig=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Mouth-Watering Curry Recipes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Light and Dark Mode Styles */
+        body.light-mode {
+            background-color: #FFF1E0;
+            color: #4B6043;
+        }
+        body.dark-mode {
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+        }
+        .navbar.light-mode {
+            background-color: #D64045;
+        }
+        .navbar.dark-mode {
+            background-color: #444444;
+        }
+        .navbar-brand {
+            color: #FFF1E0 !important;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #FFF1E0 !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #FF6F3C;
+        }
+        .btn-primary {
+            background-color: #FF6F3C;
+            border-color: #FF6F3C;
+        }
+        .btn-primary:hover {
+            background-color: #D64045;
+            border-color: #D64045;
+        }
+        h2, p {
+            color: #4B6043;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        h1 {
+            font-family: 'Algerian', sans-serif;
+            font-size: 30px;
+        }
+
+        /* Cards and Images */
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .container .row {
+            row-gap: 30px;
+        }
+
+        /* Blog-specific layout */
+        .blog-post h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #D64045;
+        }
+
+        .blog-post .card-title {
+            font-size: 1.5rem;
+            color: #FF6F3C;
+        }
+
+        .blog-post .card-text {
+            color: #4B6043;
+            font-size: 1rem;
+        }
+
+        .blog-post .card-body {
+            padding: 1.5rem;
+        }
+
+        .blog-post img {
+            border-radius: 8px;
+        }
+
+        .blog-post .container {
+            padding-bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .navbar-brand {
+                font-size: 28px;
+            }
+            .navbar-nav .nav-link {
+                font-size: 16px;
+            }
+            .card-img-top {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 22px;
+            }
+            .navbar-brand {
+                font-size: 24px;
+            }
+            .card-img-top {
+                height: 120px;
+            }
+        }
+
+        .theme-toggle {
+            font-size: 20px;
+            cursor: pointer;
+            color: #FFF1E0;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark light-mode">
+        <div class="container-fluid">
+            <!-- Logo and Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" class="img-fluid" height="50px" width="60px">
+                Turban Tadka
+            </a>
+            <!-- Navbar Toggle for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Search Bar and Brightness Icon -->
+            <div class="d-flex align-items-center">
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <span class="theme-toggle" id="themeToggle">&#9728;</span> <!-- Brightness Icon -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <div class="container blog-post my-5">
+        <h1>5 Mouth-Watering Curry Recipes</h1>
+        <p class="text-center">Curry lovers, rejoice! These five curry recipes are packed with flavor and are perfect for your dinner table. Whether you like it spicy or mild, there's something here for everyone. Below, we explore five different curry recipes, each with its own unique twist.</p>
+
+        <div class="row justify-content-center">
+            <!-- Chicken Curry Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/chicken (2).jpg" class="card-img-top" alt="Chicken Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Spicy Chicken Curry</h2>
+                        <p class="card-text">This classic chicken curry is rich in flavor, made with tender chicken pieces simmered in a spicy, tomato-based gravy. Perfect for family dinners or special occasions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mutton Curry Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/mutton.jpg" class="card-img-top" alt="Mutton Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Hearty Mutton Curry</h2>
+                        <p class="card-text">For those who love a richer, more robust taste, mutton curry is a favorite. The slow-cooked meat, combined with aromatic spices, creates a melt-in-your-mouth experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veg Curry Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/veg.jpg" class="card-img-top" alt="Veg Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Flavorful Veg Curry</h2>
+                        <p class="card-text">This vegetarian curry is packed with vegetables, simmered in a spiced coconut milk base. It’s both healthy and delicious, offering a great option for vegetarians and veggie lovers alike.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fish Curry Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/fish.jpeg" class="card-img-top" alt="Fish Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Tangy Fish Curry</h2>
+                        <p class="card-text">Fish curry is a popular choice, especially along coastal regions. This version brings out a tangy flavor from tamarind or kokum, combined with the lightness of fresh fish.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prawn Curry Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/prawn.jpg" class="card-img-top" alt="Prawn Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Creamy Prawn Curry</h2>
+                        <p class="card-text">Prawn curry is a seafood lover's delight. This creamy and mildly spiced curry is perfect for those who enjoy a lighter, yet rich, seafood dish. Serve it with steamed rice for                         a complete meal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            const navbar = document.querySelector('.navbar');
+            const systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+
+            function updateTheme(mode) {
+                if (mode === 'dark') {
+                    body.classList.replace('light-mode', 'dark-mode');
+                    navbar.classList.replace('light-mode', 'dark-mode');
+                    localStorage.setItem('theme', 'dark');
+                    themeToggle.innerHTML = '&#9790;';  // Moon icon for dark mode
+                } else {
+                    body.classList.replace('dark-mode', 'light-mode');
+                    navbar.classList.replace('dark-mode', 'light-mode');
+                    localStorage.setItem('theme', 'light');
+                    themeToggle.innerHTML = '&#xF1D2';  // Sun icon for light mode
+                }
+            }
+
+            if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && systemDarkMode.matches)) {
+                updateTheme('dark');
+            }
+
+            themeToggle.addEventListener('click', function () {
+                if (body.classList.contains('light-mode')) {
+                    updateTheme('dark');
+                } else {
+                    updateTheme('light');
+                }
+            });
+
+            systemDarkMode.addListener(e => {
+            if (!localStorage.getItem('theme')) {
+                if (e.matches) {
+                    body.classList.replace('light-mode', 'dark-mode');
+                    navbar.classList.replace('light-mode', 'dark-mode');
+                } else {
+                    body.classList.replace('dark-mode', 'light-mode');
+                    navbar.classList.replace('dark-mode', 'light-mode');
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>

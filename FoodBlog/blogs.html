@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turban Tadka - Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+               body.light-mode {
+            background-color: #FFF1E0;
+            color: #4B6043;
+        }
+        body.dark-mode {
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+        }
+        .navbar.light-mode {
+            background-color: #D64045;
+        }
+        .navbar.dark-mode {
+            background-color: #444444;
+        }
+       
+        .navbar-brand {
+            color: #FFF1E0 !important;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #FFF1E0 !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #FF6F3C;
+        }
+        .btn-primary {
+            background-color: #FF6F3C;
+            border-color: #FF6F3C;
+        }
+        .btn-primary:hover {
+            background-color: #D64045;
+            border-color: #D64045;
+        }
+        h2, p {
+            color: #489721;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        h1 {
+            font-family: 'Algerian', sans-serif;
+            font-size: 30px;
+        }
+        h2.card-title {
+    color: #FF6F3C;
+}
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark light-mode">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" class="img-fluid" height="50px" width="60px">
+                Turban Tadka
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <form class="d-flex me-3" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>                
+                <span class="theme-toggle" id="themeToggle">&#9728;</span> 
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h1 class="text-center">Blog Categories</h1>
+
+        <!-- Healthy Recipes-->
+        <h2 id="healthy-recipes" class="mt-4">Healthy Recipes</h2>
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/veg.jpg" class="card-img-top" alt="Spicy Chicken Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Veg Curry</h2>
+                        <p class="card-text">This vegetarian curry is packed with vegetables, offering a great option for vegetarians and veggie lovers alike.</p>
+                        <p class="blog-author">By Gayathiri E</p>
+                        <p class="blog-date">Published on September 20, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/fish.jpeg" class="card-img-top" alt="Spicy Chicken Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Tangy Fish Curry</h2>
+                        <p class="card-text">Fish curry is a popular choice  from tamarind  masalaa healthy mix combined with the lightness of fresh fish.</p>
+                        <p class="blog-author">By Aswin S</p>
+                        <p class="blog-date">Published on September 20, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/prawn.jpg" class="card-img-top" alt="Prawn Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Prawn Curry </h2>
+                        <p class="card-text">Prawn curry is a seafood lover's delight. This creamy and mildly spiced curry is perfect for those who enjoy a lighter.</p>
+                        <p class="blog-author">By Muhsina M</p>
+                        <p class="blog-date">Published on September 20, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/chicken (2).jpg" class="card-img-top" alt="Spicy Chicken Curry">
+                    <div class="card-body">
+                        <h2 class="card-title">Spicy Chicken </h2>
+                        <p class="card-text">Tender chicken simmered in a spicy, tomato-based gravy. Perfect for family dinners and parties with friends.</p>
+                        <p class="blog-author">By Gayathiri E</p>
+                        <p class="blog-date">Published on September 2, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Juices -->
+        <h2 id="juices" class="mt-4">Juices</h2>
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/juice.jpg" class="card-img-top" alt="Fresh Orange Juice">
+                    <div class="card-body">
+                        <h2 class="card-title">Orange Juice</h2>
+                        <p class="card-text">Refreshing orange juice made with fresh oranges.</p>
+                        <p class="blog-author">By Shubiksha B</p>
+                        <p class="blog-date">Published on September 7, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/download (7).jpeg" class="card-img-top" alt="Fresh Orange Juice">
+                    <div class="card-body">
+                        <h2 class="card-title">Fruit Juice</h2>
+                        <p class="card-text">Refreshing orange juice made with fresh oranges.</p>
+                        <p class="blog-author">By Gayathiri E</p>
+                        <p class="blog-date">Published on September 20, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/mojito.jpg" class="card-img-top" alt="Fresh Orange Juice">
+                    <div class="card-body">
+                        <h2 class="card-title">Lemon Juice</h2>
+                        <p class="card-text">Refreshing lemon juice made with fresh oranges.</p>
+                        <p class="blog-author">By Chowdri S</p>
+                        <p class="blog-date">Published on September 5, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/cold.jpg" class="card-img-top" alt="Fresh Orange Juice">
+                    <div class="card-body">
+                        <h2 class="card-title">Melon Juice</h2>
+                        <p class="card-text">Refreshing fruit juice made with fresh oranges.</p>
+                        <p class="blog-author">By Dayanithi E K</p>
+                        <p class="blog-date">Published on September 2, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Snacks-->
+        <h2 id="snacks" class="mt-4">Snacks</h2>
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/samosa.jpg" class="card-img-top" alt="Spicy Samosa">
+                    <div class="card-body">
+                        <h2 class="card-title">Spicy Samosa</h2>
+                        <p class="card-text">Crispy and spicy samosas filled with potatoes.</p>
+                        <p class="blog-author">By Dharshana V</p>
+                        <p class="blog-date">Published on September 20, 2024</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/shawarma.jpg" class="card-img-top" alt="Spicy Samosa">
+                    <div class="card-body">
+                        <h2 class="card-title">Shawarma</h2>
+                        <p class="card-text">Crispy and spicy shawarma filled with potatoes.</p>
+                        <p class="blog-author">By Aswin S</p>
+                        <p class="blog-date">Published on September 18, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/egg.jpg" class="card-img-top" alt="Spicy Samosa">
+                    <div class="card-body">
+                        <h2 class="card-title">Maggie</h2>
+                        <p class="card-text">Crispy and spicy maggie filled with potatoes.</p>
+                        <p class="blog-author">By Bharathi T</p>
+                        <p class="blog-date">Published on September 19, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/pizza.jpeg" class="card-img-top" alt="Spicy Samosa">
+                    <div class="card-body">
+                        <h2 class="card-title">Pizza</h2>
+                        <p class="card-text">spicy pizza filled with potatoes and other fillings</p>
+                        <p class="blog-author">By Bharathi T</p>
+                        <p class="blog-date">Published on September 19, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <h2 id="desserts" class="mt-4">Desserts</h2>
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/cake.jpg" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h2 class="card-title">IceCream Cake</h2>
+                        <p class="card-text">Rich and moist chocolate cake for dessert lovers.</p>
+                        <p class="blog-author">By Gowtham S</p>
+                        <p class="blog-date">Published on September 4, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/donut.jpg" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h2 class="card-title">Donut Cake</h2>
+                        <p class="card-text">Rich and moist chocolate cake for dessert lovers.</p>
+                        <p class="blog-author">By Dhivya K</p>
+                        <p class="blog-date">Published on September 15, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/cupcake.jpg" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h2 class="card-title">Cup Cake</h2>
+                        <p class="card-text">Rich and moist chocolate cake for dessert lovers.</p>
+                        <p class="blog-author">By Bommi G</p>
+                        <p class="blog-date">Published on September 15, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="images/sweet.jpg" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h2 class="card-title">Sweet Pudding</h2>
+                        <p class="card-text">Rich and moist chocolate cake for dessert lovers.</p>
+                        <p class="blog-author">By Shalini M</p>
+                        <p class="blog-date">Published on September 1, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="contact-details text-center">
+            <h2>Follow Us On</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+                <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            const navbar = document.querySelector('.navbar');
+
+            function updateTheme(mode) {
+                body.classList.toggle('dark-mode', mode === 'dark');
+                body.classList.toggle('light-mode', mode === 'light');
+                navbar.classList.toggle('dark-mode', mode === 'dark');
+                navbar.classList.toggle('light-mode', mode === 'light');
+                localStorage.setItem('theme', mode);
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                updateTheme(savedTheme);
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function () {
+                    const newMode = body.classList.contains('light-mode') ? 'dark' : 'light';
+                    updateTheme(newMode);
+                });
+            }
+
+            document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault(); 
+    const query = document.getElementById('searchInput').value.toLowerCase();  
+    if (query.includes('healthy')) {
+        document.getElementById('healthy-recipes').scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('juices')) {
+        document.getElementById('juices').scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('snacks')) {
+        document.getElementById('snacks').scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('desserts')) {
+        document.getElementById('desserts').scrollIntoView({ behavior: 'smooth' });
+    } else {
+        alert('No results found');
+    }
+});
+
+            document.getElementById('commentForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                const comment = document.getElementById('commentInput').value;
+                const commentsList = document.getElementById('commentsList');
+                const commentElement = document.createElement('p');
+                commentElement.textContent = comment;
+                commentsList.appendChild(commentElement);
+                document.getElementById('commentInput').value = '';
+            });
+        });
+    </script>
+</body>
+
+</html>

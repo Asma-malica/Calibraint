@@ -6,6 +6,7 @@ https://goalkicker.com/
 
 html / css guide 
 
+https://tutorial.techaltum.com/
 
 https://tutorial.techaltum.com/htmlTags.html#google_vignette
 
@@ -52,3 +53,16 @@ ol{
 	list-style-type:upper-roman;}
 
 5.
+
+
+
+
+
+when i click on checkout icon it should open the dashboard content which is inside the side bar and the width should automatically get reduced and expand when clicking on that icon 
+the main dashboard content also should be in correct responsive manner It contains three important div called card-container , container-fluid (which has col-lg-6 and col-lg-4)
+then when i click on arrow dashboard which is inside the side nav bar it should open the main dashboar-container content
+add these functionalities and give me the correct code   complete all these changes and provide me the exact completed code dont even chnage one line of my already existing code giv eme as it is if is not neccesary o change the code
+total code must be responsive manner (ie sidebar , header-container , dashboard - container )
+let me provide you the sample images also dont change anything in the existing code add all these functionalities and give me the correct and complete code 
+PROVIDE ME THE COMPLETE CODE DONT CHANGE MY CODE 
+I WANT THE ALL THE CONTENTS AND IMAGES WHICH IS PRESENT IN MY CODE

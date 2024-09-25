@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Delicious Dessert Recipes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body.light-mode {
+            background-color: #FFF1E0;
+            color: #4B6043;
+        }
+        body.dark-mode {
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+        }
+        .navbar.light-mode {
+            background-color: #D64045;
+        }
+        .navbar.dark-mode {
+            background-color: #444444;
+        }
+        .navbar-brand {
+            color: #FFF1E0 !important;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #FFF1E0 !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #FF6F3C;
+        }
+        .btn-primary {
+            background-color: #FF6F3C;
+            border-color: #FF6F3C;
+        }
+        .btn-primary:hover {
+            background-color: #D64045;
+            border-color: #D64045;
+        }
+        h1 {
+            font-family: 'Algerian', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #D64045;
+        }
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-author {
+            font-size: 16px;
+            font-style: italic;
+            color: #4B6043;
+        }
+        .blog-date {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: #FF6F3C;
+        }
+        .card-text {
+            color: #4B6043;
+            font-size: 1rem;
+        }
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .navbar-brand {
+                font-size: 28px;
+            }
+            .navbar-nav .nav-link {
+                font-size: 16px;
+            }
+            .card-img-top {
+                height: 150px;
+            }
+        }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 22px;
+            }
+            .navbar-brand {
+                font-size: 24px;
+            }
+            .card-img-top {
+                height: 120px;
+            }
+        }
+        .theme-toggle {
+            font-size: 20px;
+            cursor: pointer;
+            color: #FFF1E0;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark light-mode">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" class="img-fluid" height="50px" width="60px">
+                Turban Tadka
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <span class="theme-toggle" id="themeToggle">&#9728;</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <div class="container blog-post my-5">
+        <h1>5 Delicious Dessert Recipes</h1>
+        <div class="blog-author">By Aswin S</div>
+        <div class="blog-date">Published on September 16, 2024</div>
+        <p class="text-center">Sweet lovers, this one’s for you! Check out these five mouth-watering dessert recipes that will be the perfect finish to any meal. From creamy to crispy, we have it all!</p>
+
+        <div class="row justify-content-center">
+            <!-- Cupcake-->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/cupcake.jpg" class="card-img-top" alt="Cupcake">
+                    <div class="card-body">
+                        <h2 class="card-title">Vanilla Cupcakes</h2>
+                        <p class="card-text">These light and fluffy vanilla cupcakes are topped with a rich buttercream frosting. Simple yet perfect for every occasion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cake -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/cake.jpg" class="card-img-top" alt="Cake">
+                    <div class="card-body">
+                        <h2 class="card-title">Chocolate Layer Cake</h2>
+                        <p class="card-text">Indulge in this rich and decadent chocolate cake layered with smooth, velvety frosting. A true treat for chocolate lovers!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweet  -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/sweet.jpg" class="card-img-top" alt="Indian Sweet">
+                    <div class="card-body">
+                        <h2 class="card-title">Indian Sweets</h2>
+                        <p class="card-text">This assortment of traditional Indian sweets will leave you craving more! From gulab jamun to kaju katli, it's a sugary delight.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jamun  -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/jamun.jpg" class="card-img-top" alt="Gulab Jamun">
+                    <div class="card-body">
+                        <h2 class="card-title">Gulab Jamun</h2>
+                        <p class="card-text">Gulab Jamun, soaked in a sugary syrup, is a favorite dessert in Indian cuisine. Soft, sweet, and simply irresistible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donut  -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/donut.jpg" class="card-img-top" alt="Donut">
+                    <div class="card-body">
+                        <h2 class="card-title">Glazed Donuts</h2>
+                        <p class="card-text">These fluffy donuts, glazed with a sweet sugar coating, make for the perfect breakfast or snack-time indulgence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <h4>Follow for more tips:</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            const navbar = document.querySelector('.navbar');
+            const systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+
+            function updateTheme(mode) {
+                if (mode === 'dark') {
+                    body.classList.replace('light-mode', 'dark-mode');
+                    navbar.classList.replace('light-mode', 'dark-mode');
+                    localStorage.setItem('theme', 'dark');
+                    themeToggle.innerHTML = '&#9790;';  
+                } else {
+                    body.classList.replace('dark-mode', 'light-mode');
+                    navbar.classList.replace('dark-mode', 'light-mode');
+                    localStorage.setItem('theme', 'light');
+                    themeToggle.innerHTML = '&#9728;';  
+                }
+            }
+
+            if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && systemDarkMode.matches)) {
+                updateTheme('dark');
+            }
+
+            themeToggle.addEventListener('click', function () {
+                if (body.classList.contains('light-mode')) {
+                    updateTheme('dark');
+                } else {
+                    updateTheme('light');
+                }
+            });
+
+            systemDarkMode.addListener(e => {
+                if (!localStorage.getItem('theme')) {
+                    if (e.matches) {
+                        body.classList.replace('light-mode', 'dark-mode');
+                        navbar.classList.replace('light-mode', 'dark-mode');
+                    } else {
+                        body.classList.replace('dark-mode', 'light-mode');
+                        navbar.classList.replace('dark-mode', 'light-mode');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

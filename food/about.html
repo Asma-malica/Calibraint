@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body.light-mode {
+        background-color: #fff1e0;
+        color: #4b6043;
+      }
+      body.dark-mode {
+        background-color: #2b2b2b;
+        color: #e0e0e0;
+      }
+      .navbar.light-mode {
+        background-color: #d64045;
+      }
+      .navbar.dark-mode {
+        background-color: #444444;
+      }
+      .navbar-brand {
+        color: #fff1e0 !important;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .navbar-nav .nav-link {
+        color: #fff1e0 !important;
+      }
+      .content h1,
+      .content h2,
+      .content p {
+        color: #4b6043;
+      }
+      .content h1 {
+        font-family: "Algerian", sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .content h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .content p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .btn-primary {
+        background-color: #ff6f3c;
+        border-color: #ff6f3c;
+      }
+      .btn-primary:hover {
+        background-color: #d64045;
+        border-color: #d64045;
+      }
+      .gif-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .gif-container img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+      }
+
+      @media (max-width: 992px) {
+        .gif-container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .gif-container {
+          grid-template-columns: 1fr;
+        }
+        .gif-container img {
+          height: 250px;
+        }
+        .gif-container img:nth-child(4) {
+          display: none;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .gif-container {
+          grid-template-columns: 1fr 1fr;
+        }
+        .gif-container img:nth-child(4) {
+          display: block;
+        }
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .row {
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark light-mode">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            class="img-fluid"
+            height="70px"
+            width="80px"
+          />
+          Turban Tadka
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipe.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container content my-5">
+      <h1>Our Journey Through the Flavors of the World</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Welcome to Turban Tadka</h2>
+          <p>
+            Turban Tadka is more than just a food blog; it's a celebration of
+            culinary creativity and the love for bold, vibrant flavors. Founded
+            by food enthusiasts who believe in the power of a well-cooked meal,
+            this blog is our little corner of the internet where we share the
+            magic that happens in our kitchen.
+          </p>
+          <p>
+            Our recipes are inspired by a blend of traditional and modern
+            cuisine, with a focus on simple ingredients and bold, unforgettable
+            flavors. Whether you're a seasoned chef or just starting your
+            culinary adventure, our blog is here to inspire and guide you
+            through every delicious step.
+          </p>
+          <h2>Our Story</h2>
+          <p>
+            It all started with a simple idea: to bring the essence of
+            home-cooked meals to everyone. Turban Tadka is rooted in family
+            traditions, personal experiences, and a passion for creating new
+            memories through food. Every recipe we share carries a piece of our
+            story, and we hope it inspires you to create your own culinary
+            memories.
+          </p>
+          <p>
+            Join us on this delicious journey, and let’s savor the art of
+            cooking together!
+          </p>
+          <a href="recipe.html" class="btn btn-primary mt-4"
+            >Discover Our Recipes</a
+          >
+        </div>
+
+        <div class="col-md-6">
+          <div class="gif-container">
+            <img src="images/about.gif" alt="GIF 1" class="img-fluid rounded" />
+            <img
+              src="images/about2.gif"
+              alt="GIF 2"
+              class="img-fluid rounded"
+            />
+            <img src="images/juice.gif" alt="GIF 3" class="img-fluid rounded" />
+            <img
+              src="images/about1.gif"
+              alt="GIF 4"
+              class="custom img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Mouth-Watering Curry Recipes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body.light-mode {
+        background-color: #fff1e0;
+        color: #4b6043;
+      }
+      body.dark-mode {
+        background-color: #2b2b2b;
+        color: #e0e0e0;
+      }
+      .navbar.light-mode {
+        background-color: #d64045;
+      }
+      .navbar.dark-mode {
+        background-color: #444444;
+      }
+      .navbar-brand {
+        color: #fff1e0 !important;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .navbar-nav .nav-link {
+        color: #fff1e0 !important;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .btn-primary {
+        background-color: #ff6f3c;
+        border-color: #ff6f3c;
+      }
+      h1 {
+        font-family: "Algerian", sans-serif;
+        font-size: 48px;
+      }
+      h2,
+      p {
+        color: #4b6043;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      h1 {
+        font-family: "Algerian", sans-serif;
+        font-size: 30px;
+      }
+      .card-img-top {
+        object-fit: cover;
+        height: 200px;
+      }
+      .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        margin-bottom: 30px;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .container .row {
+        row-gap: 30px;
+      }
+
+      .blog-author {
+        font-size: 16px;
+        font-style: italic;
+        color: #4b6043;
+      }
+      .blog-date {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 20px;
+      }
+      .blog-post h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #d64045;
+      }
+      .blog-post .card-title {
+        font-size: 1.5rem;
+        color: #ff6f3c;
+      }
+      .blog-post .card-text {
+        color: #4b6043;
+        font-size: 1rem;
+      }
+      .blog-post .card-body {
+        padding: 1.5rem;
+      }
+      .blog-post img {
+        border-radius: 8px;
+      }
+      .blog-post .container {
+        padding-bottom: 50px;
+      }
+      .social-icons img {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+      }
+      .social-icons img:hover {
+        transform: scale(1.1);
+      }
+      .searchbox1 {
+        display: none !important;
+      }
+      @media (max-width: 989px) {
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .searchbox {
+          flex: 1;
+          justify-content: space-between;
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 24px;
+        }
+        .navbar-brand {
+          font-size: 28px;
+        }
+        .navbar-nav .nav-link {
+          font-size: 16px;
+        }
+        .card-img-top {
+          height: 150px;
+        }
+        .searchbox1 {
+          display: none !important;
+        }
+      }
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 22px;
+        }
+        .navbar-brand {
+          font-size: 24px;
+        }
+        .card-img-top {
+          height: 120px;
+        }
+        .searchbox1 {
+          display: none !important;
+        }
+      }
+      @media (max-width: 988px) {
+        .searchbox {
+          display: none !important;
+        }
+        .searchbox1 {
+          display: block !important;
+        }
+        .theme-toggle1 {
+          display: block !important;
+        }
+        .navbar-toggler{
+            display: block !important;
+        }
+      }
+
+      .theme-toggle {
+        font-size: 20px;
+        cursor: pointer;
+        color: #fff1e0;
+      }
+      .theme-toggle1 {
+        font-size: 20px;
+        cursor: pointer;
+        color: #fff1e0;
+        display: none;
+      }
+      .comment {
+        background-color: #fff1e0;
+        border: 1px solid #d64045;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+      .comment-section {
+        display: flex;
+        flex-direction: column;
+      }
+      .commentbox {
+        margin-bottom: 20px;
+      }
+      .content h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #d64045;
+      }
+      .user,
+      .usercomment {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #d64045;
+        border-radius: 4px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #publish {
+        background-color: #d64045;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #publish:disabled {
+        background-color: #ccc;
+      }
+      .notify {
+        display: flex;
+        align-items: center;
+      }
+      .notifyinput {
+        margin-right: 5px;
+      }
+      .heading1 {
+        margin-top: 10px;
+      }
+      .text {
+        margin-top: 5px;
+        font-style: italic;
+      }
+      .parents {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .parents img {
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .date {
+        font-size: 12px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark light-mode">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            class="img-fluid"
+            height="50px"
+            width="60px"
+          />
+          Turban Tadka
+        </a>
+        <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+        >
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <span class="theme-toggle1 justify-content-end" id="themeToggle1" >&#9728;</span>
+    <div>
+        <div class="searchbox d-flex align-items-center">
+          <form class="d-flex me-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+          <span class="theme-toggle " id="themeToggle">&#9728;</span
+          >
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon m-0"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="searchbox1 d-flex align-items-center m-3">
+      <form class="d-flex mt-3" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          justify-content="space-around"
+        />
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+      <!-- <span class="theme-toggle" id="themeToggle">&#9728;</span> -->
+    </div>
+
+    <div class="container blog-post my-5">
+      <h1>5 Mouth-Watering Curry Recipes</h1>
+      <div class="blog-author">By Gayathiri E</div>
+      <div class="blog-date">Published on September 20, 2024</div>
+      <p class="text-center">
+        Dive into these five delectable curry recipes, each bursting with flavor
+        and perfect for your dinner table. From spicy to mild, there’s something
+        for every palate!
+      </p>
+
+      <div class="row justify-content-center">
+        <!-- Chicken Curry  -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img
+              src="images/chicken (2).jpg"
+              class="card-img-top"
+              alt="Chicken Curry"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Spicy Chicken Curry</h2>
+              <p class="card-text">
+                A classic chicken curry with tender pieces simmered in a spicy,
+                tomato-based gravy. Ideal for family dinners!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mutton Curry-->
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img
+              src="images/mutton.jpg"
+              class="card-img-top"
+              alt="Mutton Curry"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Hearty Mutton Curry</h2>
+              <p class="card-text">
+                Rich and robust, this slow-cooked mutton curry offers a
+                melt-in-your-mouth experience with aromatic spices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veg Curry -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="images/veg.jpg" class="card-img-top" alt="Veg Curry" />
+            <div class="card-body">
+              <h2 class="card-title">Flavorful Veg Curry</h2>
+              <p class="card-text">
+                A vegetarian delight packed with vegetables simmered in spiced
+                coconut milk. Healthy and delicious!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fish Curry-->
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="images/fish.jpeg" class="card-img-top" alt="Fish Curry" />
+            <div class="card-body">
+              <h2 class="card-title">Tangy Fish Curry</h2>
+              <p class="card-text">
+                A coastal favorite with a tangy flavor from tamarind, combined
+                with the lightness of fresh fish.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prawn Curry -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img
+              src="images/prawn.jpg"
+              class="card-img-top"
+              alt="Prawn Curry"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Creamy Prawn Curry</h2>
+              <p class="card-text">
+                A seafood lover's delight, this creamy curry pairs perfectly
+                with steamed rice for a complete meal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="comment-section">
+          <div class="commentbox">
+            <div class="content">
+              <h3>Leave a Review:</h3>
+              <input
+                type="text"
+                class="user"
+                placeholder="Your Name"
+                value="Anonymous"
+              />
+
+              <div class="commentinput">
+                <input
+                  type="text"
+                  placeholder="Enter Comment"
+                  class="usercomment"
+                />
+                <div class="buttons">
+                  <button type="submit" id="publish">Publish</button>
+                  <div class="notify">
+                    <input type="checkbox" class="notifyinput" />
+                    <span>Notify Me</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="heading1">
+            <div>
+              <span id="comment-count" style="padding-right: 2px">0</span>
+              Comments
+            </div>
+            <div class="text">
+              <p>We'd love to hear your thoughts!</p>
+            </div>
+            <div class="comments"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <h4>Follow us for more delicious tips:</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com"
+            ><img src="images/instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="Twitter"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.getElementById("themeToggle");
+        const themeToggle1 = document.getElementById("themeToggle1");
+        const body = document.body;
+        const navbar = document.querySelector(".navbar");
+        const systemDarkMode = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        );
+
+        function updateTheme(mode) {
+          if (mode === "dark") {
+            body.classList.replace("light-mode", "dark-mode");
+            navbar.classList.replace("light-mode", "dark-mode");
+            localStorage.setItem("theme", "dark");
+            themeToggle.innerHTML = "&#9790;";
+            themeToggle1.innerHTML = "&#9790;";
+          } else {
+            body.classList.replace("dark-mode", "light-mode");
+            navbar.classList.replace("dark-mode", "light-mode");
+            localStorage.setItem("theme", "light");
+            themeToggle.innerHTML = "&#9728;";
+            themeToggle1.innerHTML = "&#9728;";
+          }
+        }
+
+        if (
+          localStorage.getItem("theme") === "dark" ||
+          (!localStorage.getItem("theme") && systemDarkMode.matches)
+        ) {
+          updateTheme("dark");
+        }
+
+        function toggleTheme() {
+          if (body.classList.contains("light-mode")) {
+            updateTheme("dark");
+          } else {
+            updateTheme("light");
+          }
+        }
+
+        themeToggle.addEventListener("click", toggleTheme);
+        themeToggle1.addEventListener("click", toggleTheme);
+
+        systemDarkMode.addListener((e) => {
+          if (!localStorage.getItem("theme")) {
+            if (e.matches) {
+              body.classList.replace("light-mode", "dark-mode");
+              navbar.classList.replace("light-mode", "dark-mode");
+            } else {
+              body.classList.replace("dark-mode", "light-mode");
+              navbar.classList.replace("dark-mode", "light-mode");
+            }
+          }
+        });
+
+        const userComment = document.querySelector(".usercomment");
+        const publishBtn = document.querySelector("#publish");
+        const commentsContainer = document.querySelector(".comments");
+        const userName = document.querySelector(".user");
+        const commentCount = document.getElementById("comment-count");
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const savedComments =
+            JSON.parse(localStorage.getItem("comments")) || [];
+          savedComments.forEach((comment) => addCommentToPage(comment));
+          updateCommentCount();
+        });
+
+        userComment.addEventListener("input", () => {
+          publishBtn.disabled = !userComment.value.trim();
+        });
+
+        publishBtn.addEventListener("click", () => {
+          const name = userName.value.trim() || "Anonymous";
+          const message = userComment.value.trim();
+          if (message) {
+            const comment = {
+              name,
+              message,
+              date: new Date().toLocaleString(),
+            };
+            addCommentToPage(comment);
+            saveCommentToStorage(comment);
+            userComment.value = "";
+            publishBtn.disabled = true;
+            updateCommentCount();
+          }
+        });
+
+        function addCommentToPage(comment) {
+          const commentHTML = `
+                    <div class="parents">
+                        <div>
+                            <h1>${comment.name}</h1>
+                            <p>${comment.message}</p>
+                            <span class="date">${comment.date}</span>
+                        </div>
+                    </div>
+                `;
+          commentsContainer.innerHTML += commentHTML;
+        }
+
+        function saveCommentToStorage(comment) {
+          const savedComments =
+            JSON.parse(localStorage.getItem("comments")) || [];
+          savedComments.push(comment);
+          localStorage.setItem("comments", JSON.stringify(savedComments));
+        }
+
+        function updateCommentCount() {
+          const commentsNum = commentsContainer.childElementCount;
+          commentCount.textContent = commentsNum;
+        }
+      });
+    </script>
+  </body>
+</html>
+
